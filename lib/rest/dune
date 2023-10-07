@@ -1,0 +1,9 @@
+(library
+ (name rest_api)
+ (modules handler handlers server)
+ (libraries dream))
+
+(library
+ (name rest_impl)
+ (modules server_impl)
+ (libraries dream rest_api ui))

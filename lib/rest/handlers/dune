@@ -1,0 +1,13 @@
+(library
+ (name rest_handlers)
+ (modules dist_css_proxy get_index get_dist_css get_session_new)
+ (libraries dream rest_api ui))
+
+(rule
+ (target dist_css_proxy.ml)
+ (deps ../../../dist.css)
+ (action 
+   (with-stdout-to 
+     %{target}
+     (run echo ""))))
+

@@ -1,0 +1,14 @@
+(library
+ (name import)
+ (modules import)
+ (libraries producer lwt))
+
+(library
+ (name container)
+ (modules container)
+ (libraries rest_handlers rest_impl))
+
+(library
+ (name qqr)
+ (modules lib_main)
+ (libraries container dream))

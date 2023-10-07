@@ -1,0 +1,6 @@
+(library
+ (name ui)
+ (modules base_html layout navbar)
+ (libraries tyxml)
+ (preprocess
+  (pps tyxml-ppx)))

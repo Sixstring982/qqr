@@ -1,0 +1,8 @@
+(rule
+  (target dist.css)
+  (deps 
+    (source_tree ./lib)
+    (:css ./lib/style/main.css)
+    (:tailwindconfig ./tailwind.config.js))
+  (mode promote)
+  (action (run tailwindcss -i %{css} -c %{tailwindconfig} -o %{target})))

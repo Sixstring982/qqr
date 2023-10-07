@@ -1,0 +1,11 @@
+# Secrets / local configuration
+.env
+
+# Local database
+db/
+
+# OCaml build artifacts
+_build/
+
+# Built css
+dist.css
