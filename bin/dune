@@ -1,4 +1,4 @@
 (executable
  (public_name qqr)
  (name main)
- (libraries qqr))
+ (libraries caqti-driver-sqlite3 qqr))

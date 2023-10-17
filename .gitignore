@@ -2,7 +2,7 @@
 .env
 
 # Local database
-db/
+/db/database.sqlite3
 
 # OCaml build artifacts
 _build/

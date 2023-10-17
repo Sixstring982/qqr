@@ -6,4 +6,4 @@
 (library
  (name rest_impl)
  (modules server_impl)
- (libraries dream rest_api ui))
+ (libraries db_api dream rest_api ui))

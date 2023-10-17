@@ -1,0 +1,9 @@
+(library
+ (name db_api)
+ (modules config db user)
+ (libraries caqti-lwt dream import sqlite3 uuidm))
+
+(library
+ (name db_impl)
+ (modules db_impl user_impl)
+ (libraries caqti-lwt db_api fmt import producer safepass sqlite3 uuidm))
