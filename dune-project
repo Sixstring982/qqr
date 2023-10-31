@@ -1,4 +1,4 @@
-(lang dune 3.11)
+(lang dune 3.8.1)
 
 (name qqr)
 
@@ -24,11 +24,10 @@
    dune 
    (caqti-driver-sqlite3 (>= 1.9.0))
    (dream (>= 1.0.0~alpha5))
-   (producer (>= 0.2.0))
    (sqlite3 (>= 5.1.0))
    (safepass (>= 3.1))
-   (tyxml (>= 4.6.0))
-   (tyxml-ppx (>= 4.6.0))
+   (tyxml (>= 4.5.0))
+   (tyxml-ppx (>= 4.5.0))
    (uuidm (>= 0.9.8)))
  (tags
   (topics "to describe" your project)))

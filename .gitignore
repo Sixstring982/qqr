@@ -1,5 +1,7 @@
 # Secrets / local configuration
 .env
+.envrc
+.direnv/
 
 # Local database
 /db/database.sqlite3
