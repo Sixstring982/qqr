@@ -1,4 +1,4 @@
-(lang dune 3.8.1)
+(lang dune 3.8)
 
 (name qqr)
 

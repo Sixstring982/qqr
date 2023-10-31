@@ -13,6 +13,7 @@
           (on.listRepo (on.makeOpamRepo ./.));
         devPackagesQuery = {
           # You can add "development" packages here. They will get added to the devShell automatically.
+          alcotest = "*";
           ocaml-lsp-server = "*";
           ocamlformat = "*";
         };
@@ -48,7 +49,7 @@
         devShells.default = pkgs.mkShell {
           inputsFrom = builtins.attrValues packages;
           buildInputs = devPackages ++ [
-            # You can add packages from nixpkgs here
+            pkgs.nodePackages.tailwindcss
           ];
         };
       });
